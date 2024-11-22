@@ -24,6 +24,10 @@ class Robot:
         my_str = f'My name is {self.name} and my price is {self.price}.'
         return my_str
 
+    def __add__(self, other):
+        price = self.price + other.price
+        return price
+
 
 r1 = Robot('Marvin', 150)
 r2 = Robot('Gal', 45)
@@ -31,6 +35,7 @@ r2 = Robot('Gal', 45)
 #print(r1 + r2)
 #print(r1 > r2)
 print(r1)
+print(r1 + r2)
 
 
 
